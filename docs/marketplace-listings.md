@@ -32,9 +32,9 @@ Claude Code:
 
 ```text
 /plugin marketplace add dragonfruit-ai/skills
-/plugin install image-background-remover@dragonfruit-skills
-/plugin install license-plate-recognizer@dragonfruit-skills
-/plugin install shopify-skills@dragonfruit-skills
+/plugin install image-background-remover@chompute-skills
+/plugin install license-plate-recognizer@chompute-skills
+/plugin install shopify-skills@chompute-skills
 ```
 
 Codex:

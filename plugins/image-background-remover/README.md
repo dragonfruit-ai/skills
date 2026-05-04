@@ -12,7 +12,7 @@ image file or image URL.
 
 ```text
 /plugin marketplace add dragonfruit-ai/skills
-/plugin install image-background-remover@dragonfruit-skills
+/plugin install image-background-remover@chompute-skills
 /reload-plugins
 ```
 
@@ -28,7 +28,7 @@ Run:
 codex plugin marketplace add dragonfruit-ai/skills --ref main
 ```
 
-Then open `/plugins`, select **Dragonfruit AI Skills**, and install **Image
+Then open `/plugins`, select **Chompute Skills**, and install **Image
 Background Remover**.
 
 ## Authentication

@@ -1,7 +1,7 @@
 {
-  "name": "dragonfruit-skills",
+  "name": "chompute-skills",
   "interface": {
-    "displayName": "Dragonfruit AI Skills"
+    "displayName": "Chompute Skills"
   },
   "plugins": [
     {

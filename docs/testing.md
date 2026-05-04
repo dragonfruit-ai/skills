@@ -13,9 +13,9 @@ From this repository root:
 ```bash
 claude plugin validate .
 claude plugin marketplace add . --scope local
-claude plugin install image-background-remover@dragonfruit-skills --scope local
-claude plugin install license-plate-recognizer@dragonfruit-skills --scope local
-claude plugin install shopify-skills@dragonfruit-skills --scope local
+claude plugin install image-background-remover@chompute-skills --scope local
+claude plugin install license-plate-recognizer@chompute-skills --scope local
+claude plugin install shopify-skills@chompute-skills --scope local
 ```
 
 Restart Claude Code or run:
@@ -40,7 +40,7 @@ From a shell:
 codex plugin marketplace add ./path/to/skills
 ```
 
-Then start Codex, run `/plugins`, choose **Dragonfruit AI Skills**, and install
+Then start Codex, run `/plugins`, choose **Chompute Skills**, and install
 the plugin you want to test.
 
 If your installed Codex CLI does not yet expose `codex plugin`, open a Codex

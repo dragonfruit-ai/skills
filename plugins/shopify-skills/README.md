@@ -42,7 +42,7 @@ The package also includes `chompute-shopify-setup`, a setup helper skill.
 
 ```text
 /plugin marketplace add dragonfruit-ai/skills
-/plugin install shopify-skills@dragonfruit-skills
+/plugin install shopify-skills@chompute-skills
 /reload-plugins
 ```
 
@@ -64,7 +64,7 @@ Then try:
 codex plugin marketplace add dragonfruit-ai/skills --ref main
 ```
 
-Then open `/plugins`, select **Dragonfruit AI Skills**, and install **Shopify
+Then open `/plugins`, select **Chompute Skills**, and install **Shopify
 Skills**.
 
 ## Shopify permissions and approval

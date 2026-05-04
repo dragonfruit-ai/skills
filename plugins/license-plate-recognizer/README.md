@@ -12,7 +12,7 @@ bounding box metadata.
 
 ```text
 /plugin marketplace add dragonfruit-ai/skills
-/plugin install license-plate-recognizer@dragonfruit-skills
+/plugin install license-plate-recognizer@chompute-skills
 /reload-plugins
 ```
 
@@ -28,7 +28,7 @@ Run:
 codex plugin marketplace add dragonfruit-ai/skills --ref main
 ```
 
-Then open `/plugins`, select **Dragonfruit AI Skills**, and install **License
+Then open `/plugins`, select **Chompute Skills**, and install **License
 Plate Recognizer**.
 
 ## Responsible use

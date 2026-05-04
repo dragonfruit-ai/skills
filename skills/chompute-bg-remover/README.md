@@ -15,7 +15,7 @@ For Claude Code, prefer the plugin package:
 
 ```text
 /plugin marketplace add dragonfruit-ai/skills
-/plugin install image-background-remover@dragonfruit-skills
+/plugin install image-background-remover@chompute-skills
 ```
 
 ## Authentication

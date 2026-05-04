@@ -15,7 +15,7 @@ For Claude Code, prefer the plugin package:
 
 ```text
 /plugin marketplace add dragonfruit-ai/skills
-/plugin install license-plate-recognizer@dragonfruit-skills
+/plugin install license-plate-recognizer@chompute-skills
 ```
 
 ## Responsible use

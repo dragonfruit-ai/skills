@@ -1,4 +1,4 @@
-# Dragonfruit AI Skills
+# Chompute Skills
 
 Installable AI-agent skills for practical workflows across ecommerce, image
 processing, operations, and more. The repository is structured for Claude Code,
@@ -41,9 +41,9 @@ From inside Claude Code:
 
 ```text
 /plugin marketplace add dragonfruit-ai/skills
-/plugin install image-background-remover@dragonfruit-skills
-/plugin install license-plate-recognizer@dragonfruit-skills
-/plugin install shopify-skills@dragonfruit-skills
+/plugin install image-background-remover@chompute-skills
+/plugin install license-plate-recognizer@chompute-skills
+/plugin install shopify-skills@chompute-skills
 /reload-plugins
 ```
 
@@ -51,9 +51,9 @@ From a shell:
 
 ```bash
 claude plugin marketplace add dragonfruit-ai/skills
-claude plugin install image-background-remover@dragonfruit-skills
-claude plugin install license-plate-recognizer@dragonfruit-skills
-claude plugin install shopify-skills@dragonfruit-skills
+claude plugin install image-background-remover@chompute-skills
+claude plugin install license-plate-recognizer@chompute-skills
+claude plugin install shopify-skills@chompute-skills
 ```
 
 Claude Code plugin skills are namespaced by plugin. Example prompts:
@@ -72,7 +72,7 @@ Codex can read this repository as a plugin marketplace:
 codex plugin marketplace add dragonfruit-ai/skills --ref main
 ```
 
-Then open Codex, run `/plugins`, select **Dragonfruit AI Skills**, and install
+Then open Codex, run `/plugins`, select **Chompute Skills**, and install
 the package you want.
 
 If your local Codex CLI does not yet expose the `codex plugin` subcommands, use
