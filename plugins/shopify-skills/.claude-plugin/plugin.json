@@ -15,10 +15,9 @@
     "chompute_api_key": {
       "type": "string",
       "title": "API key",
-      "description": "Your Chompute or Juvant API key from the logged-in app/dashboard.",
+      "description": "Sign up at https://chompute.ai/skills to get your API key.",
       "sensitive": true,
       "required": true
     }
   }
 }
-

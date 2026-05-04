@@ -20,6 +20,6 @@ For Claude Code, prefer the plugin package:
 
 ## Authentication
 
-Set `CHOMPUTE_API_KEY`, configure the Claude Code plugin API key field, or save
-the key as `chompute_key.txt` next to `SKILL.md`.
-
+Sign up at `https://chompute.ai/skills` to get your API key. Then set
+`CHOMPUTE_API_KEY`, configure the Claude Code plugin API key field, or save the
+key as `chompute_key.txt` next to `SKILL.md`.

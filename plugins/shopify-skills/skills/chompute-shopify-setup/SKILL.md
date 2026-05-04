@@ -35,13 +35,13 @@ Do not restate the same question twice in different wording.
 1. **Start with a short setup message.**
 
    Tell the user you are about to:
-   - verify their Chompute/Juvant API key
+   - verify their Chompute API key
    - check Shopify CLI
    - install the Shopify AI Toolkit skills
    - connect their store
    - verify the local Shopify token helper
 
-2. **Check whether the Chompute/Juvant API key is available.**
+2. **Check whether the Chompute API key is available.**
 
    Check for the key in this order:
    - `CHOMPUTE_API_KEY`
@@ -53,9 +53,11 @@ Do not restate the same question twice in different wording.
 
    If no key is present, tell the user:
 
-   > You need an API key from your Chompute or Juvant account. Set
-   > `CHOMPUTE_API_KEY`, configure the plugin's Chompute API key option,
-   > or save your key to the parent Shopify skills directory as
+   > You need a Chompute API key. Sign up and get one at:
+   > `https://chompute.ai/skills`
+   >
+   > Then set `CHOMPUTE_API_KEY`, configure the plugin's Chompute API key
+   > option, or save your key to the parent Shopify skills directory as
    > `chompute_key.txt`.
 
    Then stop.

@@ -78,9 +78,9 @@ Only connect stores the user owns, manages, or is authorized to operate.
 
 ## Authentication
 
-Set `CHOMPUTE_API_KEY`, configure the Claude Code plugin API key field, or use
-the legacy `chompute_key.txt` file in the parent Shopify skills directory.
+Sign up at `https://chompute.ai/skills` to get your API key. Then set
+`CHOMPUTE_API_KEY`, configure the Claude Code plugin API key field, or use the
+legacy `chompute_key.txt` file in the parent Shopify skills directory.
 
 The setup helper also uses Shopify CLI authentication to obtain a local Shopify
 store session. Do not commit Shopify tokens or API keys.
-

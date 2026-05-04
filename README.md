@@ -89,16 +89,16 @@ $skill-installer install https://github.com/dragonfruit-ai/skills/tree/main/skil
 
 ## API key setup
 
-These skills require an API key from the logged-in product experience that
-issued your account access. The skills check for the key in this order:
+These skills require an API key. Sign up at `https://chompute.ai/skills` to get
+your API key. The skills check for the key in this order:
 
 1. `CHOMPUTE_API_KEY`
 2. `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY` when installed as a Claude Code plugin
 3. `chompute_key.txt` in the legacy skill-specific location
 
 Do not commit API keys to this repository or any user project. For public
-install pages, show package information only. User-specific install commands
-and keys should be copied from the logged-in app/dashboard.
+install pages, show package information only and direct users to
+`https://chompute.ai/skills` to get their API key.
 
 ## Safety notes
 
