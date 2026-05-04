@@ -1,0 +1,54 @@
+{
+  "name": "dragonfruit-skills",
+  "description": "Installable AI-agent skills for image background removal, license plate recognition, and Shopify store operations.",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Dragonfruit AI",
+    "email": "support@chompute.ai"
+  },
+  "plugins": [
+    {
+      "name": "image-background-remover",
+      "source": "./plugins/image-background-remover",
+      "description": "Remove image backgrounds and save transparent PNG outputs from an AI agent.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Dragonfruit AI",
+        "email": "support@chompute.ai"
+      },
+      "homepage": "https://chompute.ai/skills/background-remover.md",
+      "repository": "https://github.com/dragonfruit-ai/skills",
+      "category": "Image Processing",
+      "tags": ["images", "background-removal", "transparent-png"]
+    },
+    {
+      "name": "license-plate-recognizer",
+      "source": "./plugins/license-plate-recognizer",
+      "description": "Read license plates from authorized vehicle images and return structured recognition data.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Dragonfruit AI",
+        "email": "support@chompute.ai"
+      },
+      "homepage": "https://chompute.ai/skills/license-plate-recognizer.md",
+      "repository": "https://github.com/dragonfruit-ai/skills",
+      "category": "Computer Vision",
+      "tags": ["lpr", "alpr", "ocr", "vehicle-operations"]
+    },
+    {
+      "name": "shopify-skills",
+      "source": "./plugins/shopify-skills",
+      "description": "One Shopify operations bundle with 27 workflow skills for reports, exports, discounts, product copy, inventory, SEO, and more.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Dragonfruit AI",
+        "email": "support@chompute.ai"
+      },
+      "homepage": "https://chompute.ai/skills/shopify-skills.md",
+      "repository": "https://github.com/dragonfruit-ai/skills",
+      "category": "Ecommerce",
+      "tags": ["shopify", "ecommerce", "operations", "analytics", "marketing"]
+    }
+  ]
+}
+

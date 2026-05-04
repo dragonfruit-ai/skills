@@ -1,0 +1,7 @@
+interface:
+  display_name: Image Background Remover
+  short_description: Remove image backgrounds and save transparent PNG outputs.
+  default_prompt: Remove the background from ./product-photo.jpg and save it as a transparent PNG.
+policy:
+  allow_implicit_invocation: true
+

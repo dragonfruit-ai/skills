@@ -1,0 +1,24 @@
+{
+  "name": "shopify-skills",
+  "version": "0.1.0",
+  "description": "One Shopify operations bundle with 27 workflow skills for reports, exports, discounts, product copy, inventory, SEO, and more.",
+  "author": {
+    "name": "Dragonfruit AI",
+    "email": "support@chompute.ai",
+    "url": "https://dragonfruit.ai"
+  },
+  "homepage": "https://chompute.ai/skills/shopify-skills.md",
+  "repository": "https://github.com/dragonfruit-ai/skills",
+  "keywords": ["shopify", "ecommerce", "agent-skills", "store-operations"],
+  "skills": "./skills/",
+  "userConfig": {
+    "chompute_api_key": {
+      "type": "string",
+      "title": "API key",
+      "description": "Your Chompute or Juvant API key from the logged-in app/dashboard.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
+

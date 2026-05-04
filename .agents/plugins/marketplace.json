@@ -1,0 +1,45 @@
+{
+  "name": "dragonfruit-skills",
+  "interface": {
+    "displayName": "Dragonfruit AI Skills"
+  },
+  "plugins": [
+    {
+      "name": "image-background-remover",
+      "source": {
+        "source": "local",
+        "path": "./plugins/image-background-remover"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Image Processing"
+    },
+    {
+      "name": "license-plate-recognizer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/license-plate-recognizer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Computer Vision"
+    },
+    {
+      "name": "shopify-skills",
+      "source": {
+        "source": "local",
+        "path": "./plugins/shopify-skills"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Ecommerce"
+    }
+  ]
+}
+

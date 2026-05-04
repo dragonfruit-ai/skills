@@ -1,0 +1,7 @@
+interface:
+  display_name: License Plate Recognizer
+  short_description: Read license plates from authorized vehicle images.
+  default_prompt: Read the license plate from this authorized vehicle image and return the result as JSON.
+policy:
+  allow_implicit_invocation: true
+

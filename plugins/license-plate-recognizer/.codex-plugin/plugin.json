@@ -1,0 +1,31 @@
+{
+  "name": "license-plate-recognizer",
+  "version": "0.1.0",
+  "description": "Read license plates from authorized vehicle images and return structured recognition data.",
+  "author": {
+    "name": "Dragonfruit AI",
+    "email": "support@chompute.ai",
+    "url": "https://dragonfruit.ai"
+  },
+  "homepage": "https://chompute.ai/skills/license-plate-recognizer.md",
+  "repository": "https://github.com/dragonfruit-ai/skills",
+  "keywords": ["license-plate-recognition", "lpr", "alpr", "ocr", "agent-skills"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "License Plate Recognizer",
+    "shortDescription": "Read license plates from authorized vehicle images.",
+    "longDescription": "Use this plugin when a user asks to read a license plate, extract plate text, run LPR or ALPR, or return plate text with confidence and bounding box from an authorized vehicle image.",
+    "developerName": "Dragonfruit AI",
+    "category": "Computer Vision",
+    "capabilities": ["Read"],
+    "websiteURL": "https://chompute.ai",
+    "privacyPolicyURL": "https://chompute.ai/privacy",
+    "termsOfServiceURL": "https://chompute.ai/license-plate-recognition/responsible-use",
+    "defaultPrompt": [
+      "Use License Plate Recognizer to read the license plate from this authorized vehicle image and return JSON.",
+      "Use License Plate Recognizer to run LPR on this image URL and show the bounding box."
+    ],
+    "brandColor": "#f26a3d"
+  }
+}
+

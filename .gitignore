@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+
+# User-specific credentials must never be committed.
+chompute_key.txt
+*.secret
+*.token
+.env
+.env.*
+

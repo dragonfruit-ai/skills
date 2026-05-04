@@ -1,0 +1,24 @@
+{
+  "name": "license-plate-recognizer",
+  "version": "0.1.0",
+  "description": "Read license plates from authorized vehicle images and return structured recognition data.",
+  "author": {
+    "name": "Dragonfruit AI",
+    "email": "support@chompute.ai",
+    "url": "https://dragonfruit.ai"
+  },
+  "homepage": "https://chompute.ai/skills/license-plate-recognizer.md",
+  "repository": "https://github.com/dragonfruit-ai/skills",
+  "keywords": ["license-plate-recognition", "lpr", "alpr", "ocr", "agent-skills"],
+  "skills": "./skills/",
+  "userConfig": {
+    "chompute_api_key": {
+      "type": "string",
+      "title": "API key",
+      "description": "Your Chompute or Juvant API key from the logged-in app/dashboard.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
+

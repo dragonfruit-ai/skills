@@ -1,0 +1,24 @@
+{
+  "name": "image-background-remover",
+  "version": "0.1.0",
+  "description": "Remove image backgrounds and save transparent PNG outputs from an AI agent.",
+  "author": {
+    "name": "Dragonfruit AI",
+    "email": "support@chompute.ai",
+    "url": "https://dragonfruit.ai"
+  },
+  "homepage": "https://chompute.ai/skills/background-remover.md",
+  "repository": "https://github.com/dragonfruit-ai/skills",
+  "keywords": ["background-removal", "images", "transparent-png", "agent-skills"],
+  "skills": "./skills/",
+  "userConfig": {
+    "chompute_api_key": {
+      "type": "string",
+      "title": "API key",
+      "description": "Your Chompute or Juvant API key from the logged-in app/dashboard.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
+
