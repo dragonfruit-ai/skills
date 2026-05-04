@@ -14,7 +14,7 @@ Removes the background from an image and produces a transparent PNG.
 
 ## Prerequisites
 
-This skill requires a Chompute API key. Check for the key in this order:
+This skill requires a Chompute Access Key. Check for the key in this order:
 
 1. `CHOMPUTE_API_KEY`
 2. `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY`
@@ -22,17 +22,17 @@ This skill requires a Chompute API key. Check for the key in this order:
 
 If none of these exists or the value is empty, tell the user:
 
-> You need a Chompute API key. Sign up and get one at:
-> https://chompute.ai/signup
+> You need a Chompute Access Key. Sign up and get one at:
+> https://chompute.ai/skills
 >
-> Then set `CHOMPUTE_API_KEY`, configure the plugin's Chompute API key option,
+> Then set `CHOMPUTE_API_KEY`, configure the plugin's Chompute Access Key option,
 > or save your key to: `<this skill's directory>/chompute_key.txt`
 
 Stop and do not continue without a valid key file.
 
 If a valid key is present, use it without printing it and tell the user:
 
-> Valid API key present. Proceeding...
+> Valid Access Key present. Proceeding...
 
 ## Workflow
 
@@ -65,7 +65,7 @@ If a valid key is present, use it without printing it and tell the user:
      If the URL does not contain a usable file name, use `chompute_output.png`.
 
 5. **On error**, show the error details to the user. If the API returns
-   401, tell the user their API key may be invalid or expired and direct
+   401, tell the user their Access Key may be invalid or expired and direct
    them to https://chompute.ai to check their account.
 
 ## API Contract

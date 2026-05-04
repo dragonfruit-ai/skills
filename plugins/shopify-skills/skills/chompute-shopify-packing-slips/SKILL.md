@@ -147,5 +147,5 @@ The store must grant `read_orders` and `read_products` access scopes.
 
 - This skill is read-only - it does NOT modify orders, fulfillments, or any
   other Shopify resource.
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - Do not split one skill request across multiple `input_text` items.

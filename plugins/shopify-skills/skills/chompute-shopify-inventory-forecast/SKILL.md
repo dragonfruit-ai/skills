@@ -98,7 +98,7 @@ First follow the shared Shopify local setup instructions in:
 
 ## Notes
 
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - This skill is read-only. It does not modify any Shopify data.
 - Items whose `tracked` flag is false in Shopify are skipped.
 - Items with no sales in the history window are classified as OK (stockout

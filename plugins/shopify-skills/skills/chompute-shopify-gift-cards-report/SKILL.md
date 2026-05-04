@@ -160,5 +160,5 @@ The store must grant the `read_gift_cards` access scope.
 ## Notes
 
 - This skill is read-only. It does NOT create, disable, or modify gift cards.
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - Do not split one skill request across multiple `input_text` items.

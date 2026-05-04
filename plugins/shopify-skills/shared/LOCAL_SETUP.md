@@ -4,11 +4,11 @@ Use this shared local setup for all Chompute Shopify skills.
 
 ## Where the local files live
 
-- The Chompute API key can come from:
+- The Chompute Access Key can come from:
   - `CHOMPUTE_API_KEY`
   - `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY`
   - `../chompute_key.txt` from a Shopify skill folder
-- The legacy Chompute API key file is in the parent Shopify skills directory:
+- The legacy Chompute Access Key file is in the parent Shopify skills directory:
   - `../chompute_key.txt` from a Shopify skill folder
 - The Shopify token helper script is also in the parent Shopify skills directory:
   - `../get-shopify-store-session.js` from a Shopify skill folder
@@ -28,10 +28,10 @@ node ../get-shopify-store-session.js <store>.myshopify.com >/dev/null
 
 If the key is missing, tell the user:
 
-> You need a Chompute API key. Sign up and get one at:
-> https://chompute.ai/signup
+> You need a Chompute Access Key. Sign up and get one at:
+> https://chompute.ai/skills
 >
-> Then set `CHOMPUTE_API_KEY`, configure the plugin's Chompute API key option,
+> Then set `CHOMPUTE_API_KEY`, configure the plugin's Chompute Access Key option,
 > or save your key to: `<parent Shopify skills directory>/chompute_key.txt`
 
 If the Shopify token helper fails, guide the user into running

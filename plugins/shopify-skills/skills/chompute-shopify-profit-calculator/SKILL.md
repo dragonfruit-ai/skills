@@ -69,7 +69,7 @@ First follow the shared Shopify local setup instructions in:
    - numeric fields are optional; omit if you want defaults
    - serialize the object into exactly one `input_text`
    - do not split fields across multiple `input_text` parts
-   - do not print the token or API key into chat
+   - do not print the token or Access Key into chat
 
    Use:
 
@@ -120,7 +120,7 @@ First follow the shared Shopify local setup instructions in:
 
 ## Notes
 
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - This skill is read-only. It does not modify any Shopify data.
 - Variants missing `inventoryItem.unitCost` will be flagged separately — tell the user
   they can fix the report by setting Cost per item on those variants in Shopify admin.

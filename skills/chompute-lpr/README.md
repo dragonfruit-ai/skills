@@ -24,6 +24,6 @@ Only process vehicle images the user is authorized to use.
 
 ## Authentication
 
-Sign up at `https://chompute.ai/skills` to get your API key. Then set
-`CHOMPUTE_API_KEY`, configure the Claude Code plugin API key field, or save the
+Sign up at `https://chompute.ai/skills` to get your Access Key. Then set
+`CHOMPUTE_API_KEY`, configure the Claude Code plugin Access Key field, or save the
 key as `chompute_key.txt` next to `SKILL.md`.

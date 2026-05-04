@@ -97,7 +97,7 @@ First follow the shared Shopify local setup instructions in:
 
 ## Notes
 
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - This skill is **preview-only** — Chompute does not send emails or create
   discount codes. The merchant uses the output to send via their own ESP
   (Klaviyo, Mailchimp, Omnisend, etc.) and create the code manually or

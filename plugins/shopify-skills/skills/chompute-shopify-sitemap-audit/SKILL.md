@@ -129,4 +129,4 @@ The store must grant the `read_products` and `read_content` access scopes
   page, or metafield.
 - Scoring is fully deterministic (word counts, missing SEO fields, missing
   images, empty collections). No LLM calls.
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.

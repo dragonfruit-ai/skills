@@ -97,7 +97,7 @@ First follow the shared Shopify local setup instructions in:
 
 ## Notes
 
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - This skill is **preview-only**. It does not write any metafields to Shopify.
   If the user wants to persist the points and tier to customer metafields,
   they can use the `chompute_loyalty.points` and `chompute_loyalty.tier`

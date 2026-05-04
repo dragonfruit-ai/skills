@@ -112,5 +112,5 @@ The store must grant the `read_themes` access scope.
 
 - This skill is backup-only. It does NOT restore or write to the theme.
   Restore is a separate skill in a future release.
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - Do not split one skill request across multiple `input_text` items.

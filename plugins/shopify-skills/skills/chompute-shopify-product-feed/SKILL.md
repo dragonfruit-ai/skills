@@ -121,5 +121,5 @@ The store must grant the `read_products` access scope.
   storefront resource.
 - The zip contains: `google-shopping-feed.xml`, `meta-product-feed.csv`,
   `tiktok-product-feed.csv` (depending on selected platforms).
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - Do not split one skill request across multiple `input_text` items.

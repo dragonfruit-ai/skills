@@ -107,7 +107,7 @@ Supported notification types: `order_confirmation`, `shipping_confirmation`,
 
 ## Notes
 
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - This skill is read-only. The merchant pastes the generated HTML into
   **Shopify admin > Settings > Notifications**. Chompute does not modify any
   theme or notification template automatically in this release.

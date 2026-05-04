@@ -134,4 +134,4 @@ Add it to your store's auth scopes and re-run `shopify store auth`.
   redirect.
 - It uses only the Shopify Admin API. No outbound HTTP, no storefront
   scraping, no probes.
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.

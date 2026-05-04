@@ -92,7 +92,7 @@ After the user answers, save them locally and confirm:
    - build exactly one payload object
    - serialize that object into exactly one `input_text`
    - do not split these fields across multiple `input_text` parts
-   - do not print the token or API key into chat
+   - do not print the token or Access Key into chat
 
    Use:
 
@@ -166,6 +166,6 @@ After the user answers, save them locally and confirm:
 ## Notes
 
 - Never print the Shopify access token in chat.
-- Never print the Chompute API key in chat.
+- Never print the Chompute Access Key in chat.
 - Keep the chat clean and do not paste raw API output.
 - Do not split one skill request across multiple `input_text` items.

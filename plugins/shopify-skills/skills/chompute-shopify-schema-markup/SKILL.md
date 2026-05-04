@@ -127,4 +127,4 @@ The store must grant the `read_products` access scope.
 - This skill is generation-only. It does NOT call `themeFilesUpsert` or
   modify the theme in any way - the merchant applies the snippet manually.
 - All JSON-LD is built deterministically from product data. No LLM calls.
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.

@@ -227,7 +227,7 @@ curl -sS -X POST https://chompute-services.dragonfruit.ai/openai/v1/responses \
 ## Notes
 
 - Never print the Shopify access token in chat.
-- Never print the Chompute API key in chat.
+- Never print the Chompute Access Key in chat.
 - Keep the chat clean and do not paste raw API output.
 - Always preview first.
 - Always reuse the exact latest `description_html` for revise/apply.

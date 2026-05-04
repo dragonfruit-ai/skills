@@ -91,6 +91,6 @@ First follow the shared Shopify local setup instructions in:
 
 ## Notes
 
-- Never print the Shopify access token or Chompute API key in chat.
+- Never print the Shopify access token or Chompute Access Key in chat.
 - This skill is **preview-only**. It does not modify the theme. The merchant
   pastes the chosen variant into their theme's announcement bar section.

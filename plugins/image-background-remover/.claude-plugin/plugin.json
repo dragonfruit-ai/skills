@@ -14,8 +14,8 @@
   "userConfig": {
     "chompute_api_key": {
       "type": "string",
-      "title": "API key",
-      "description": "Sign up at https://chompute.ai/skills to get your API key.",
+      "title": "Access Key",
+      "description": "Sign up at https://chompute.ai/skills to get your Access Key.",
       "sensitive": true,
       "required": true
     }
