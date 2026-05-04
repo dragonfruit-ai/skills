@@ -44,7 +44,9 @@ Do not restate the same question twice in different wording.
 2. **Check whether the Chompute Access Key is available.**
 
    Check for the key in this order:
+   - Claude plugin configured Access Key: `${user_config.chompute_api_key}`
    - `CHOMPUTE_API_KEY`
+   - `CLAUDE_PLUGIN_OPTION_chompute_api_key`
    - `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY`
    - `../chompute_key.txt` from this skill folder
 
@@ -56,9 +58,9 @@ Do not restate the same question twice in different wording.
    > You need a Chompute Access Key. Sign up and get one at:
    > `https://chompute.ai/skills`
    >
-   > Then set `CHOMPUTE_API_KEY`, configure the plugin's Chompute Access Key
-   > option, or save your key to the parent Shopify skills directory as
-   > `chompute_key.txt`.
+   > Then configure the plugin's Chompute Access Key option, set
+   > `CHOMPUTE_API_KEY`, or save your key to the parent Shopify skills
+   > directory as `chompute_key.txt`.
 
    Then stop.
 

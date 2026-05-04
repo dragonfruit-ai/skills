@@ -17,19 +17,22 @@ and OCR results.
 
 This skill requires a Chompute Access Key. Check for the key in this order:
 
-1. `CHOMPUTE_API_KEY`
-2. `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY`
-3. `chompute_key.txt` in this skill's directory (same folder as this SKILL.md)
+1. Claude plugin configured Access Key: `${user_config.chompute_api_key}`
+2. `CHOMPUTE_API_KEY`
+3. `CLAUDE_PLUGIN_OPTION_chompute_api_key`
+4. `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY`
+5. `chompute_key.txt` in this skill's directory (same folder as this SKILL.md)
 
 If none of these exists or the value is empty, tell the user:
 
 > You need a Chompute Access Key. Sign up and get one at:
 > https://chompute.ai/skills
 >
-> Then set `CHOMPUTE_API_KEY`, configure the plugin's Chompute Access Key option,
-> or save your key to: `<this skill's directory>/chompute_key.txt`
+> Then configure the plugin's Chompute Access Key option, set
+> `CHOMPUTE_API_KEY`, or save your key to:
+> `<this skill's directory>/chompute_key.txt`
 
-Stop and do not continue without a valid key file.
+Stop and do not continue without a valid Access Key.
 
 If a valid key is present, use it without printing it and tell the user:
 
@@ -56,6 +59,18 @@ If a valid key is present, use it without printing it and tell the user:
 
 3. **Call the Chompute API** using the contract below. Use whatever HTTP
    method is available in the environment (curl, python, node, etc.).
+   - When constructing the request, use the first non-empty Access Key from
+     the prerequisite list above.
+   - If you write shell commands, prefer this safe export pattern:
+
+     ```bash
+     PLUGIN_CHOMPUTE_ACCESS_KEY="${user_config.chompute_api_key}"
+     if [ -n "$PLUGIN_CHOMPUTE_ACCESS_KEY" ] && [ "$PLUGIN_CHOMPUTE_ACCESS_KEY" != '${user_config.chompute_api_key}' ]; then
+       export CHOMPUTE_API_KEY="$PLUGIN_CHOMPUTE_ACCESS_KEY"
+     else
+       export CHOMPUTE_API_KEY=${CHOMPUTE_API_KEY:-${CLAUDE_PLUGIN_OPTION_chompute_api_key:-${CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY:-$(tr -d '[:space:]' < "${CLAUDE_SKILL_DIR}/chompute_key.txt" 2>/dev/null)}}}
+     fi
+     ```
 
 4. **Parse the response.** On success, read the JSON in `output_text`
    and extract the LPR results.

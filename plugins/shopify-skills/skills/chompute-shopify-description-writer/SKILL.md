@@ -216,7 +216,12 @@ Recommended shell pattern:
 
 ```bash
 export SHOPIFY_ACCESS_TOKEN=$(node ../get-shopify-store-session.js <store>.myshopify.com)
-export CHOMPUTE_API_KEY=${CHOMPUTE_API_KEY:-${CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY:-$(tr -d '[:space:]' < ../chompute_key.txt)}}
+PLUGIN_CHOMPUTE_ACCESS_KEY="${user_config.chompute_api_key}"
+if [ -n "$PLUGIN_CHOMPUTE_ACCESS_KEY" ] && [ "$PLUGIN_CHOMPUTE_ACCESS_KEY" != '${user_config.chompute_api_key}' ]; then
+  export CHOMPUTE_API_KEY="$PLUGIN_CHOMPUTE_ACCESS_KEY"
+else
+  export CHOMPUTE_API_KEY=${CHOMPUTE_API_KEY:-${CLAUDE_PLUGIN_OPTION_chompute_api_key:-${CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY:-$(tr -d '[:space:]' < ../chompute_key.txt)}}}
+fi
 PAYLOAD=$(node -e 'const skillPayload=JSON.parse(process.argv[1]); const payload={model:"shopify-description-writer",input:[{role:"user",content:[{type:"input_text",text:JSON.stringify(skillPayload)}]}]}; process.stdout.write(JSON.stringify(payload));' '<SKILL_PAYLOAD_JSON>')
 curl -sS -X POST https://chompute-services.dragonfruit.ai/openai/v1/responses \
   -H "Content-Type: application/json" \

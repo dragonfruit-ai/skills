@@ -1,6 +1,6 @@
 {
   "name": "license-plate-recognizer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read license plates from authorized vehicle images and return structured recognition data.",
   "author": {
     "name": "Dragonfruit AI",
@@ -16,7 +16,6 @@
       "type": "string",
       "title": "Access Key",
       "description": "Sign up at https://chompute.ai/skills to get your Access Key.",
-      "sensitive": true,
       "required": true
     }
   }

@@ -18,8 +18,9 @@ and OCR results.
 This skill requires a Chompute Access Key. Check for the key in this order:
 
 1. `CHOMPUTE_API_KEY`
-2. `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY`
-3. `chompute_key.txt` in this skill's directory (same folder as this SKILL.md)
+2. `CLAUDE_PLUGIN_OPTION_chompute_api_key`
+3. `CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY`
+4. `chompute_key.txt` in this skill's directory (same folder as this SKILL.md)
 
 If none of these exists or the value is empty, tell the user:
 

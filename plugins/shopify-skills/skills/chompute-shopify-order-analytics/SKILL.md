@@ -113,7 +113,12 @@ First follow the shared Shopify local setup instructions in:
 
    ```bash
    export SHOPIFY_ACCESS_TOKEN=$(node ../get-shopify-store-session.js <store>.myshopify.com)
-   export CHOMPUTE_API_KEY=${CHOMPUTE_API_KEY:-${CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY:-$(tr -d '[:space:]' < ../chompute_key.txt)}}
+   PLUGIN_CHOMPUTE_ACCESS_KEY="${user_config.chompute_api_key}"
+   if [ -n "$PLUGIN_CHOMPUTE_ACCESS_KEY" ] && [ "$PLUGIN_CHOMPUTE_ACCESS_KEY" != '${user_config.chompute_api_key}' ]; then
+     export CHOMPUTE_API_KEY="$PLUGIN_CHOMPUTE_ACCESS_KEY"
+   else
+     export CHOMPUTE_API_KEY=${CHOMPUTE_API_KEY:-${CLAUDE_PLUGIN_OPTION_chompute_api_key:-${CLAUDE_PLUGIN_OPTION_CHOMPUTE_API_KEY:-$(tr -d '[:space:]' < ../chompute_key.txt)}}}
+   fi
    PAYLOAD=$(node -e 'const payload={model:"shopify-order-analytics",input:[{role:"user",content:[{type:"input_text",text:JSON.stringify({store_domain:process.argv[1],shopify_access_token:process.env.SHOPIFY_ACCESS_TOKEN,periodDays:Number(process.argv[2]),compareWithPrevious:process.argv[3]!=="false",queryFilter:process.argv[4]||undefined})}]}]}; process.stdout.write(JSON.stringify(payload));' "<store>.myshopify.com" "<periodDays>" "<compareWithPrevious>" "<queryFilter>")
    curl -sS -X POST https://chompute-services.dragonfruit.ai/openai/v1/responses \
      -H "Content-Type: application/json" \

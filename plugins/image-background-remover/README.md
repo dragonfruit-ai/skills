@@ -33,8 +33,8 @@ Background Remover**.
 
 ## Authentication
 
-Sign up at `https://chompute.ai/skills` to get your Access Key. Then set
-`CHOMPUTE_API_KEY`, configure the Claude Code plugin Access Key field, or use the
+Sign up at `https://chompute.ai/skills` to get your Access Key. Then configure
+the Claude Code plugin Access Key field, set `CHOMPUTE_API_KEY`, or use the
 legacy `chompute_key.txt` file beside the skill.
 
 Do not commit Access Keys.

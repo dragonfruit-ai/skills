@@ -62,8 +62,9 @@ Do not commit credentials. Use one of:
 export CHOMPUTE_API_KEY="..."
 ```
 
-Sign up at `https://chompute.ai/skills` to get your Access Key. You can also
-configure the Claude Code plugin Access Key field when enabling the plugin.
+Sign up at `https://chompute.ai/skills` to get your Access Key. For Claude
+plugins, configure the plugin Access Key field when enabling the plugin. For
+standalone skills and Codex, set `CHOMPUTE_API_KEY`.
 
 Shopify workflows also require Shopify CLI authentication. Start with:
 

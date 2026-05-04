@@ -1,6 +1,6 @@
 {
   "name": "shopify-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "One Shopify operations bundle with 27 workflow skills for reports, exports, discounts, product copy, inventory, SEO, and more.",
   "author": {
     "name": "Dragonfruit AI",
@@ -29,4 +29,3 @@
     "brandColor": "#f26a3d"
   }
 }
-

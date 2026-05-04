@@ -1,6 +1,6 @@
 {
   "name": "image-background-remover",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Remove image backgrounds and save transparent PNG outputs from an AI agent.",
   "author": {
     "name": "Dragonfruit AI",
@@ -28,4 +28,3 @@
     "brandColor": "#f26a3d"
   }
 }
-
